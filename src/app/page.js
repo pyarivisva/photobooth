@@ -202,8 +202,6 @@ export default function OceanBooth() {
           </>
         )}
       </div>
-
-      <p className="mt-auto pt-10 text-blue-300 text-[10px] tracking-widest font-medium">MADE WITH ❤️ BY PYARI • UNUD IT</p>
     </main>
   );
 }
