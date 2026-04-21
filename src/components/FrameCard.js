@@ -11,12 +11,17 @@ export const FrameCard = ({ frame, isSelected, onClick }) => (
     }`}
   >
     {/* Menggunakan thumbnail statis untuk menghemat baterai */}
-    <div className="w-full h-full bg-slate-100 flex items-center justify-center">
-       <img 
-         src={frame.src} 
-         className="w-full h-full object-contain" 
-         alt={frame.name} 
-       />
+    <div 
+      className="w-full h-full bg-slate-100 flex items-center justify-center"
+      style={{ backgroundColor: frame.color || '#f1f5f9' }}
+    >
+       {frame.src && (
+         <img 
+           src={frame.src} 
+           className="w-full h-full object-contain" 
+           alt={frame.name} 
+         />
+       )}
     </div>
 
     {isSelected && (
